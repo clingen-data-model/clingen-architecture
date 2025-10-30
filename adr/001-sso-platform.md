@@ -13,6 +13,8 @@ https://docs.google.com/presentation/d/18TmPzghhE1OzoxG1CwviUOyu8LXFeGYt/edit?sl
 
 https://broadinstitute.atlassian.net/browse/CGSP-725?atlOrigin=eyJpIjoiNTFlOWZmODNlOWIwNGZlMDkwMmY0ZWQ1ZTlmZGQxOTgiLCJwIjoiaiJ9
 
+ClinPGx currently uses Amazon Cognito for its user pool of only staff. Some time next year, ClinPGx will switch away from Cognito in preparation for adding support for general public user accounts which can be converted to CPIC members, community curators, and other roles. ClinPGx will definitely be doing this work for their own needs and they think others may find the system useful for their own systems too.
+
 ### Decision
 
 ### Alternatives
@@ -59,6 +61,9 @@ Each group has an application within a single WorkOS account. WorkOS User IDs be
 * Authorization included as part of the platform
 * Stanford team reports initial good developer experience
 * Has enhanced B2B integrations with MCP auth
+* Comprehensive and clear documentation
+* Availability of first-party libraries for integrating with different platforms like React, JVM, Python, etc.
+* Internal structure matches our needs for a shared user pool between multiple organizations that can be managed separately each with their own roles, feature flags, and custom attributes
 
 ##### Cons
 
@@ -69,7 +74,7 @@ Each group has an application within a single WorkOS account. WorkOS User IDs be
 
 #### Amazon Cognito
 
-Leverage existing authentication platform at Stanford supporting GCI/VCI. Add social login (Google/Microsoft) ; Amazon IDs become common user IDs across ClinGen applications.
+Leverage existing authentication platform at Stanford supporting GCI/VCI and ClinPGx. Add social login (Google/Microsoft) ; Amazon IDs become common user IDs across ClinGen applications.
 
 ##### Pros
 
@@ -80,7 +85,8 @@ Leverage existing authentication platform at Stanford supporting GCI/VCI. Add so
 
 ##### Cons
 
-* Stanford wants to migrate from this (please let us know your reasons)
+* barebones/suboptimal developer experience
+* like firebase, developer has to build out tooling and there is limited customization options
 
 #### Do nothing
 
