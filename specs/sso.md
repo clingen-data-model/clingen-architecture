@@ -38,6 +38,10 @@ Definitions:
   - A set of users.
 - Permission
   - Something a user or group is allowed to do.
+  - _examples_: read document, modify profile, delete annotation
+- Role
+  - A group of permissions that can be assigned to a User
+  - _examples_: ClinPGx staff, CPIC member, CPIC author
 - Single Sign On (SSO)
   - An authentication scheme that allows users to access multiple
     applications with just one set of credentials.
