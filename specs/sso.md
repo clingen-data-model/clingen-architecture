@@ -52,24 +52,42 @@ Definitions:
 
 ## Requirements
 
-1. Any ClinGen web application MUST be able to programmatically (1a
-   create/1b read/1c update/1d delete) users.
-2. Any ClinGen web application MUST be able to programmatically (2a
-   create/2b read/2c update/2d delete) groups.
-3. Any ClinGen web application MUST be able to programmatically (3a
-   create/3b read/3c update/3d delete) permissions.
+1. Any ClinGen web application MUST be able to programmatically:
+   1. create users,
+   2. read users,
+   3. update users, and
+   4. delete users.
+2. Any ClinGen web application MUST be able to programmatically:
+   1. create groups,
+   2. read groups,
+   3. update groups, and
+   4. delete groups.
+3. Any ClinGen web application MUST be able to programmatically:
+   1. create permissions,
+   2. read permissions,
+   3. update permissions, and
+   4. delete permissions.
 4. A user MUST be able to log into any ClinGen web application using
    email/password.
 5. A user MUST be able to log into any ClinGen web application using
    Google OAuth.
 6. A user MUST be able to log into any ClinGen web application using
    Microsoft OAuth.
-7. ClinGen staff members MUST be able to manage (5a create/5b read/5c
-   update/5d delete) users via a web interface.
-8. ClinGen staff members MUST be able to manage (6a create/6b read/6c
-   update/6d delete) groups via a web interface.
-9. ClinGen staff members MUST be able to manage (7a create/7b read/7c
-   update/7d delete) permissions via a web interface.
+7. ClinGen staff members MUST be able to:
+   1. create users via a web interface,
+   2. read users via a web interface,
+   3. update users via a web interface, and
+   4. delete users via a web interface.
+8. ClinGen staff members MUST be able to:
+   1. create groups via a web interface,
+   2. read groups via a web interface,
+   3. update groups via a web interface, and
+   4. delete groups via a web interface.
+9. ClinGen staff members MUST be able to:
+   1. create permissions via a web interface,
+   2. read permissions via a web interface,
+   3. update permissions via a web interface, and
+   4. delete permissions via a web interface.
 10. A user SHOULD be able to log into any ClinGen web application using
     ORCID.
 
