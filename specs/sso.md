@@ -90,4 +90,6 @@ Definitions:
    4. delete permissions via a web interface.
 10. A user SHOULD be able to log into any ClinGen web application using
     ORCID.
+11. A user SHOULD be associated with 1 or more groups
+12. A user SHOULD be assigned 1 or more 
 
